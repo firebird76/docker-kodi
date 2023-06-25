@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  mediathekview:
+    build: .
+    container_name: mediathekview
+    ports:
+      - "5800:5800"
+    volumes:
+      - "$HOME/.mediathek3:/config:rw"
+      - "$HOME/MediathekView:/output:rw"
+    environment:
+       - "USER_ID=1000"
+       - "GROUP_ID=1000"
