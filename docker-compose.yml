@@ -1,9 +1,10 @@
 version: '3'
 
 services:
-  mediathekview:
-    build: .
-    container_name: mediathekview
+  kodi:
+ #   build: .
+    image: ghcr.io/firebird76/docker-kodi:main
+    container_name: kodi
     ports:
       - "5800:5800"
     volumes:
