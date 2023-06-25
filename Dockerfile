@@ -25,7 +25,6 @@ RUN \
         kodi
 
 
-
 COPY src/startapp.sh /startapp.sh
 
 # Set environment variables.
@@ -33,7 +32,7 @@ ENV APP_NAME="Kodi" \
     S6_KILL_GRACETIME=8000
 
 # Define mountable directories.
-VOLUME ["/config"]
+VOLUME ["/media"]
 VOLUME ["/output"]
 
 # Metadata.

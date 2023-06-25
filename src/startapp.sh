@@ -1,4 +1,4 @@
 #!/bin/sh
 export HOME=/config
 
-kodi -m $HOME
+/usr/bin/kodi -p
