@@ -33,7 +33,7 @@ ENV APP_NAME="Kodi" \
 
 # Define mountable directories.
 VOLUME ["/media"]
-VOLUME ["/output"]
+VOLUME ["/config"]
 
 # Metadata.
 LABEL \
