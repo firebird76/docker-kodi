@@ -13,9 +13,9 @@ The X11rdp feature is inherited from [https://github.com/jlesage/docker-baseimag
 
 ### Pre-build
 The Github repository is automatically build by Github Actions.
-You can pull it from Docker Hub:
+You can pull it from GitHub Hub:
 ```
-docker pull conrad784/mediathekview-webinterface:latest
+docker pull ghcr.io/firebird76/docker-kodi:nightly
 ```
 Some older versions can also be acquired by using e.g.
 ```

@@ -1,5 +1,6 @@
 # Pull base image.
-FROM jlesage/baseimage-gui:debian-11
+#FROM jlesage/baseimage-gui:debian-11
+FROM jlesage/baseimage-gui:ubuntu-22.04-v4
 
 ENV USER_ID=0 GROUP_ID=0 TERM=xterm
 
@@ -19,6 +20,7 @@ RUN locale-gen
 ENV LC_ALL en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 ENV LANG en_US.UTF-8
+ENV TZ='Europe/Berlin'
 # Run deps
 RUN \
     apt-get install -y \
