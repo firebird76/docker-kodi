@@ -3,9 +3,6 @@ FROM jlesage/baseimage-gui:debian-11
 #FROM jlesage/baseimage-gui:ubuntu-22.04-v4
 
 ENV USER_ID=0 GROUP_ID=0 TERM=xterm
-
-#ENV MEDIATHEK_VERSION=13.9.1
-
 # Define working directory.
 WORKDIR /tmp
 
